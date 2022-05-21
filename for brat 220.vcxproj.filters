@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fot brat.cpp">
+    <ClCompile Include="for brat 220.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
