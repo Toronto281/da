@@ -1,18 +1,21 @@
 ﻿
 #include <iostream>
 using namespace std;
-int fib(int n)
+int main()
 {
-	if (n < 1) {
-		return 0;
+	int fib[100];
+	int n;
+	n = 4;
+	fib[0] = 1;
+	fib[1] = 1;
+	for (int i = 2; i < n; ++i) {
+		fib[i] = fib[i - 1] + fib[i - 2];
 	}
-	if (n == 1) {
-		return 1;
+	for (int i = 0; i < n; i++) {
+		cout << fib[i] << " " << endl;
 	}
-	return fib(n - 1) + fib(n - 2);
+	
 }
-void main() {
-	int res = fib(9);
-	cout << res << endl;
-}
+
+
 
